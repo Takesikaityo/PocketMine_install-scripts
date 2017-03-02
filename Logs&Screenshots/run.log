@@ -1,0 +1,24 @@
+PS C:\Users\@@@@\Documents\PocketMine-MP> C:\Users\@@@@\Documents\PocketMine-MP\installer.ps1
+前のTmpファイルがあったので削除しました。
+詳細: GET https://github.com/Takesikaityo/PocketMine_Bin_win_x64/archive/master.zip with 0-byte payload
+詳細: received 13077875-byte response of content type application/zip
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : {80, 75, 3, 4...}
+RawContent        : HTTP/1.1 200 OK
+                    Access-Control-Allow-Origin: https://render.githubusercontent.com
+                    Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'
+                    Strict-Transport-Security: max-age=31536000...
+Headers           : {[Access-Control-Allow-Origin, https://render.githubusercontent.com], [Content-Security-Policy, default-src 'none'; style-src 'unsafe-inline'
+                    ], [Strict-Transport-Security, max-age=31536000], [Vary, Authorization,Accept-Encoding]...}
+RawContentLength  : 13077875
+
+
+LastWriteTime : 2017/03/02 20:12:32
+Length        : 13077875
+Name          : bin.zip
+
+前のBinファイルがあったので削除しました。
+前の一時展開ファイルがあったので削除しました。
