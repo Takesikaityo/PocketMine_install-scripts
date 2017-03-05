@@ -10,4 +10,4 @@ Set-ExecutionPolicy RemoteSigned
 
 を実行。してから閉じる。
 
-Bin_installer.sp1を右クリックして、PowerShellで実行を選び実行する。
+installer.sp1を右クリックして、PowerShellで実行を選び実行する。
