@@ -45,36 +45,36 @@ function Invoke-DownloadFile{
 	}
 }
 
-echo ‚æ[—ˆ‚½‚ÈBStarrySky ƒCƒ“ƒXƒg[ƒ‰[‚Ö‚æ‚¤‚±‚»BŒ¾Œê‚ÍƒI[ƒTƒJ‹¤˜a‘Œê‚Ì‚İ‚âB’ˆÓ‚¹‚¢‚âB
-echo StarrySkyƒCƒ“ƒXƒg[ƒ‹‚·‚é‚Å
+echo ã‚ˆãƒ¼æ¥ãŸãªã€‚StarrySky ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ©ãƒ¼ã¸ã‚ˆã†ã“ãã€‚è¨€èªã¯ã‚ªãƒ¼ã‚µã‚«å…±å’Œå›½èªã®ã¿ã‚„ã€‚æ³¨æ„ã›ã„ã‚„ã€‚
+echo StarrySkyã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ã§
 if(Test-Path ".\tmp\src.zip"){
 	Remove-Item ".\tmp\src.zip" -Recurse
 }else{
 }
 Invoke-DownloadFile -Uri "https://github.com/StarrySky-PE/StarrySky/archive/master.zip" -DownloadFolder ".\tmp\" -FileName "src.zip"
 Expand-Archive ".\tmp\src.zip" ".\"
-Move-Item ".\StarrySky-master\src",".\" -Passthru
-Move-Item ".\StarrySky-master\start.cmd",".\" -Passthru
-Move-Item ".\StarrySky-master\start.ps1",".\" -Passthru
+Move-Item ".\StarrySky-master\src" ".\" -Passthru
+Move-Item ".\StarrySky-master\start.cmd" ".\" -Passthru
+Move-Item ".\StarrySky-master\start.ps1" ".\" -Passthru
 Remove-Item ".\StarrySky-master" -Recurse
 
 $os = Get-WmiObject -Class Win32_OperatingSystem
 if($os.OSarchitecture -match "64"){
-echo ‚±‚Ìos‚Í64bit‚Å‚·B
+echo ã“ã®osã¯64bitã§ã™ã€‚
 if(Test-Path ".\tmp\bin.zip"){
 	Remove-Item ".\tmp\bin.zip" -Force
-    echo ‘O‚ÌTmpƒtƒ@ƒCƒ‹‚ª‚ ‚Á‚½‚©‚ç‚Èíœ‚µ‚½‚ÅB
+    echo å‰ã®Tmpãƒ•ã‚¡ã‚¤ãƒ«ãŒã‚ã£ãŸã‹ã‚‰ãªå‰Šé™¤ã—ãŸã§ã€‚
 }else{
 }
 Invoke-DownloadFile -Uri "https://github.com/Takesikaityo/PocketMine_Bin_win_x64/archive/master.zip" -DownloadFolder ".\tmp\" -FileName "bin.zip"
 if(Test-Path ".\bin"){
 	Remove-Item ".\bin" -Recurse
-    echo ‘O‚ÌBinƒtƒ@ƒCƒ‹‚ª‚ ‚Á‚½‚©‚ç‚Èíœ‚µ‚½‚ÅB
+    echo å‰ã®Binãƒ•ã‚¡ã‚¤ãƒ«ãŒã‚ã£ãŸã‹ã‚‰ãªå‰Šé™¤ã—ãŸã§ã€‚
 }else{
 }
 if(Test-Path ".\PocketMine_Bin_win_x64-master"){
 	Remove-Item ".\PocketMine_Bin_win_x64-master" -Recurse
-    echo ‘O‚Ìˆê“WŠJƒtƒ@ƒCƒ‹‚ª‚ ‚Á‚½‚©‚ç‚Èíœ‚µ‚½‚ÅB
+    echo å‰ã®ä¸€æ™‚å±•é–‹ãƒ•ã‚¡ã‚¤ãƒ«ãŒã‚ã£ãŸã‹ã‚‰ãªå‰Šé™¤ã—ãŸã§ã€‚
 }else{
 }
 Expand-Archive ".\tmp\bin.zip" ".\"
@@ -83,18 +83,18 @@ Remove-Item ".\PocketMine_Bin_win_x64-master" -Recurse
 }else{
 if(Test-Path ".\tmp\bin.zip"){
 	Remove-Item ".\tmp\bin.zip" -Recurse
-    echo ‘O‚ÌTmpƒtƒ@ƒCƒ‹‚ª‚ ‚Á‚½‚©‚ç‚Èíœ‚µ‚½‚ÅB
+    echo å‰ã®Tmpãƒ•ã‚¡ã‚¤ãƒ«ãŒã‚ã£ãŸã‹ã‚‰ãªå‰Šé™¤ã—ãŸã§ã€‚
 }else{
 }
 Invoke-DownloadFile -Uri "https://github.com/Takesikaityo/PocketMine_Bin_win_x32/archive/master.zip" -DownloadFolder "tmp\" -FileName "bin.zip"
 if(Test-Path ".\bin"){
 	Remove-Item ".\bin" -Recurse
-    echo ‘O‚ÌBinƒtƒ@ƒCƒ‹‚ª‚ ‚Á‚½‚©‚ç‚Èíœ‚µ‚½‚ÅB
+    echo å‰ã®Binãƒ•ã‚¡ã‚¤ãƒ«ãŒã‚ã£ãŸã‹ã‚‰ãªå‰Šé™¤ã—ãŸã§ã€‚
 }else{
 }
 if(Test-Path ".\PocketMine_Bin_win_x32-master"){
 	Remove-Item ".\PocketMine_Bin_win_x32-master" -Recurse
-    echo ‘O‚Ìˆê“WŠJƒtƒ@ƒCƒ‹‚ª‚ ‚Á‚½‚©‚ç‚Èíœ‚µ‚½‚ÅB
+    echo å‰ã®ä¸€æ™‚å±•é–‹ãƒ•ã‚¡ã‚¤ãƒ«ãŒã‚ã£ãŸã‹ã‚‰ãªå‰Šé™¤ã—ãŸã§ã€‚
 }else{
 }
 Expand-Archive ".\tmp\bin.zip" ".\"
