@@ -1,7 +1,48 @@
+PS C:\Users\takec\Documents\PocketMine-MP> .\installer
+よー来たな。StarrySky
+インストーラーへようこそ。言語はオーサカ共和国語のみや。注意せいや。
+StarrySkyインストールするで
+
+
+    ディレクトリ: C:\Users\takec\Documents\PocketMine-MP
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       2017/03/05     22:18                tmp
+d-----       2017/03/05     22:19                src
+Move-Item : 'C:\Users\takec\Documents\PocketMine-MP' の項目が使用中のため、項目を移動できません。
+発生場所 C:\Users\takec\Documents\PocketMine-MP\installer.ps1:56 文字:1
++ Move-Item ".\StarrySky-master\src",".\" -Passthru
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Move-Item]、PSInvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperation,Microsoft.PowerShell.Commands.MoveItemCommand
+
+-a----       2017/02/28      7:09            821 start.cmd
+Move-Item : 'C:\Users\takec\Documents\PocketMine-MP' の項目が使用中のため、項目を移動できません。
+発生場所 C:\Users\takec\Documents\PocketMine-MP\installer.ps1:57 文字:1
++ Move-Item ".\StarrySky-master\start.cmd",".\" -Passthru
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Move-Item]、PSInvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperation,Microsoft.PowerShell.Commands.MoveItemCommand
+
+-a----       2017/02/28      7:09            742 start.ps1
+Move-Item : 'C:\Users\takec\Documents\PocketMine-MP' の項目が使用中のため、項目を移動できません。
+発生場所 C:\Users\takec\Documents\PocketMine-MP\installer.ps1:58 文字:1
++ Move-Item ".\StarrySky-master\start.ps1",".\" -Passthru
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Move-Item]、PSInvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperation,Microsoft.PowerShell.Commands.MoveItemCommand
+
+このosは64bitです。
+d-----       2017/03/05     22:21                bin
+
+
+
 PS C:\Users\@@@@\Documents\PocketMine-MP> C:\Users\@@@@\Documents\PocketMine-MP\installer.ps1
-�O��Tmp�t�@�C�����������̂ō폜���܂����B
-�ڍ�: GET https://github.com/Takesikaityo/PocketMine_Bin_win_x64/archive/master.zip with 0-byte payload
-�ڍ�: received 13077875-byte response of content type application/zip
+前のTmpファイルがあったので削除しました。
+詳細: GET https://github.com/Takesikaityo/PocketMine_Bin_win_x64/archive/master.zip with 0-byte payload
+詳細: received 13077875-byte response of content type application/zip
 
 
 StatusCode        : 200
@@ -20,5 +61,5 @@ LastWriteTime : 2017/03/02 20:12:32
 Length        : 13077875
 Name          : bin.zip
 
-�O��Bin�t�@�C�����������̂ō폜���܂����B
-�O�̈ꎞ�W�J�t�@�C�����������̂ō폜���܂����B
+前のBinファイルがあったので削除しました。
+前の一時展開ファイルがあったので削除しました。
